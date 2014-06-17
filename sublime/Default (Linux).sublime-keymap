@@ -1,0 +1,55 @@
+[
+    // Delete/duplicate line
+    {
+        "keys": ["ctrl+shift+d"],
+        "command": "run_macro_file",
+        "args": {
+            "file": "res://Packages/Default/Delete Line.sublime-macro"
+        }
+    }, {
+        "keys": ["ctrl+d"],
+        "command": "duplicate_line"
+    },
+    // remap old ctrl+d to ctrl+e which used to slurp word into find
+    {
+        "keys": ["ctrl+e"],
+        "command": "find_under_expand"
+    },
+
+    // format
+    {
+        "keys": ["ctrl+shift+f"],
+        "command": "reindent",
+        "args": {
+            "single_line": false
+        }
+    },
+
+    {
+        "keys": ["ctrl+shift+f"],
+        "command": "js_format",
+        "context": [{
+            "key": "selector",
+            "operator": "equal",
+            "operand": "source.js,source.json,source.html,source.as"
+        }]
+    },
+
+    // tab switching
+    {
+        "keys": ["ctrl+pagedown"],
+        "command": "next_view_in_stack"
+    }, {
+        "keys": ["ctrl+pageup"],
+        "command": "prev_view_in_stack"
+    },
+
+    {
+        "keys": ["ctrl+tab"],
+        "command": "next_view"
+    }, {
+        "keys": ["ctrl+shift+tab"],
+        "command": "prev_view"
+    }
+
+]

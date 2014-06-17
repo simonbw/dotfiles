@@ -1,0 +1,46 @@
+{
+	"AStyleFormatter":
+	{
+		"options_default":
+		{
+			"indent": "tab"
+		}
+	},
+	"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+	"file_exclude_patterns":
+	[
+		"*.a",
+		"*.class",
+		"*.db",
+		"*.dll",
+		"*.dylib",
+		"*.exe",
+		"*.idb",
+		"*.lib",
+		"*.ncb",
+		"*.obj",
+		"*.o",
+		"*.pdb",
+		"*.psd",
+		"*.pyc",
+		"*.pyo",
+		"*.sdf",
+		"*.so",
+		"*.suo",
+		"*.aux",
+		"*.pdf",
+		"*.gz",
+		"*.fls",
+		"*.toc",
+		"*.log",
+		"*.fdb_latexmk",
+		"*.swf"
+	],
+	"font_size": 9,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"scroll_speed": 0,
+	"word_wrap": true
+}
