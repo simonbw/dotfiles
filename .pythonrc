@@ -1,0 +1,13 @@
+import rlcompleter, readline, sys, os
+readline.parse_and_bind('tab:complete')
+
+_bg_prompt = '\033[42m'
+_bg_clear = '\033[49m'
+_fg_prompt = '\033[30m'
+_fg_seperator = '\033[32m'
+_fg_clear = '\033[39m'
+_seperator = u'\uE0B0'
+prompt = " > "
+sys.ps1 = (_bg_prompt + _fg_prompt + prompt + _bg_clear + _fg_seperator + _seperator + _fg_clear).encode('utf-8')
+
+

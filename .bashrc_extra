@@ -1,0 +1,6 @@
+# This file contains things to add on to the .bashrc without having to use the same .bashrc on every machine
+# Powerline Shell
+function _update_ps1() {
+    export PS1="$(~/powerline/powerline-shell.py $? 2> /dev/null)"
+}
+export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
