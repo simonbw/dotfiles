@@ -189,7 +189,7 @@ trayer = "trayer --edge top --align right --SetDockType true --SetPartialStrut t
 volti = "volti"
 
 myLogHook :: Handle -> X ()
-myLogHook h = dynamicLogWithPP $ dzenPP
+myLogHook h = takeTopFocus <+> dynamicLogWithPP dzenPP
     {
         ppCurrent           =   dzenColor "#EBAC54" "#444" . pad
       , ppVisible           =   dzenColor "#FFF" "#444" . pad
