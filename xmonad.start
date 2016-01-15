@@ -1,6 +1,0 @@
-#!/bin/bash
-
-# set background color
-# xsetroot -solid '#111111'
-
-exec xmonad
