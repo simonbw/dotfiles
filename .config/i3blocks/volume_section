@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+# 
+# 
+# 
+
+
+if [ "$BLOCK_BUTTON" == "4" ]; then
+    pactl set-sink-volume 1 +2%
+elif [ "$BLOCK_BUTTON" == "5" ]; then
+    pactl set-sink-volume 1 -- -2%
+elif [ "$BLOCK_BUTTON" == "3" ]; then
+    pactl set-sink-mute 1 toggle
+fi
+
+VOLUME=`amixer -D pulse get Master | awk '$0~/%/{print $5}' | tr -d '[]%'| head -n1`
+STATUS=`amixer -D pulse get Master | awk '$0~/%/{print $6}' | tr -d '[]' | head -n1`
+
+if [ "$STATUS" == "off" ]; then
+    echo " $VOLUME%"
+    echo " $VOLUME%"
+    echo "#444444"
+elif [ "$VOLUME" -lt 1 ]; then
+    echo " $VOLUME%"
+    echo " $VOLUME%"
+elif [ "$VOLUME" -lt 40 ]; then
+    echo " $VOLUME%"
+else
+    echo " $VOLUME%"
+fi

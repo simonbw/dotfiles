@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+xterm -xrm "*vt100.renderFont: false" -e cava

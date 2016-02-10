@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+# - spotify logo
+
+# Pause on click
+if [ "$BLOCK_BUTTON" == "1" ]; then
+    playerctl play-pause
+# Open spotify on right click
+elif [ "$BLOCK_BUTTON" == "3" ]; then
+    i3-msg -q workspace number 5
+# Next song on scroll up
+elif [ "$BLOCK_BUTTON" == "4" ]; then
+    playerctl previous
+# Next song on scroll down
+elif [ "$BLOCK_BUTTON" == "5" ]; then
+    playerctl next
+fi
+
+TITLE=`playerctl metadata title`
+ARTIST=`playerctl metadata artist`
+STATUS=`playerctl status`
+
+echo " $TITLE - <b>$ARTIST</b>"
+echo " $TITLE"
+
+if [ "$STATUS" == "Playing" ]; then
+    :
+else
+    echo "#444444"
+fi

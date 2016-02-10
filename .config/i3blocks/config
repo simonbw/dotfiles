@@ -1,0 +1,26 @@
+command=$SCRIPT_DIR/$BLOCK_NAME
+
+[song]
+#command=xprop -name "Spotify Premium - Linux Preview" _NET_WM_ICON_NAME|\cut -d "\"" -f 2|cut -b 11-
+command=/home/simonb/.config/i3blocks/spotify_section
+interval=2
+signal=2
+markup=pango
+
+[volume]
+command=/home/simonb/.config/i3blocks/volume_section
+interval=1
+signal=1
+
+[load]
+command=/home/simonb/.config/i3blocks/load_section
+interval=1
+
+[disk]
+command=/home/simonb/.config/i3blocks/disk_section
+interval=10
+label=
+
+[date]
+command=date '+%b %d - %r'
+interval=1

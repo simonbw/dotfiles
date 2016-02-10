@@ -1,0 +1,49 @@
+[global]
+    alignment = left
+    allow_markup = yes
+    browser = /usr/bin/google-chrome
+    follow = mouse
+    font = "DejaVu Sans Mono 9"
+    format = "<b>%s %p</b>\n%b"
+    geometry = "300x5-20+20"
+    horizontal_padding = 10
+    idle_threshold = 0
+    indicate_hidden = true
+    padding = 10
+    separator_color = frame
+    separator_height = 2
+    show_age_threshold = 60
+    sort = yes
+    startup_notification = false
+    sticky_history = yes
+    word_wrap = yes
+    transparency = 20
+
+[frame]
+    width = 0
+    color = "#1c1c1c"
+
+[shortcuts]
+    close = mod4+c
+    close_all = mod4+esc
+    history = mod4+grave
+
+[urgency_low]
+    background = "#afaf5f"
+    foreground = "#1c1c1c"
+    timeout = 10
+
+[urgency_normal]
+    background = "#afaf5f"
+    foreground = "#1c1c1c"
+    timeout = 10
+
+[urgency_critical]
+    background = "#d75f00"
+    foreground = "#1c1c1c"
+    timeout = 0
+
+[spotify]
+    appname = Spotify
+    timeout = 2
+
