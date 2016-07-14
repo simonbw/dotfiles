@@ -165,9 +165,9 @@ exec_always --no-startup-id hsetroot -solid "#262626"
 
 # Keybound apps
 bindsym $mod+Shift+q exec i3-msg exit
-bindsym $mod+Return exec xterm
-bindsym $mod+Shift+Return exec gnome-terminal
-bindsym $mod+Ctrl+Return exec /usr/bin/google-chrome
+bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Shift+Return exec g/usr/bin/google-chrome
+bindsym $mod+Ctrl+Return exec subl
 bindsym $mod+space exec --no-startup-id rofi -show run
 bindsym $mod+Shift+space exec --no-startup-id rofi -show window
 bindsym $mod+Shift+z exec --no-startup-id simonlock
