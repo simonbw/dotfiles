@@ -14,7 +14,7 @@ import tempfile
 
 XCB_MAP_STATE_VIEWABLE = 2
 
-PIXEL_SIZE = 32
+PIXEL_SIZE = 24
 
 def xcb_fetch_windows():
   """ Returns an array of rects of currently visible windows. """
@@ -63,6 +63,6 @@ if __name__ == '__main__':
 
   f = '.simon-lock-image.png'
   image.save(f)
-  #os.system('i3lock -i ' + f) 
+  os.system('i3lock -i ' + f) 
   os.remove(f)
 
