@@ -160,8 +160,8 @@ exec killall dunst && exec notify-send restarted
 
 exec --no-startup-id numlockx on
 #exec --no-startup-id compton
-exec_always --no-startup-id hsetroot -solid "#262626"
-#exec_always feh --bg-fill /home/simonb/background.png
+#exec_always --no-startup-id hsetroot -solid "#262626"
+exec_always feh --bg-fill /home/simonb/background.png
 
 # Keybound apps
 bindsym $mod+Shift+q exec i3-msg exit
