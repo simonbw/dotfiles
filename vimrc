@@ -10,16 +10,17 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 " ---- Vundle Bundles ----
 call vundle#begin()
-Plugin 'edkolev/promptline.vim'
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/syntastic'
-Plugin 'gregsexton/MatchTag'
-Plugin 'vim-airline/vim-airline'
-Plugin 'junegunn/goyo.vim'
 Plugin 'PotatoesMaster/i3-vim-syntax'
-Plugin 'terryma/vim-multiple-cursors'
+Plugin 'dag/vim-fish'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'edkolev/promptline.vim'
+Plugin 'gregsexton/MatchTag'
+Plugin 'junegunn/goyo.vim'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/syntastic'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'vim-airline/vim-airline'
 " themes
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tomasr/molokai'
