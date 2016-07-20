@@ -2,6 +2,7 @@
 if $COLORTERM == 'gnome-terminal'
   set t_Co=256
 endif
+set shell=/bin/bash
 
 " ---- Vundle Setup ----
 set nocompatible            " be improved

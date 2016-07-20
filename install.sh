@@ -11,8 +11,13 @@ cp --remove-destination ./inputrc ~/.inputrc
 cp --remove-destination ./vimrc ~/.vimrc
 
 ### install stuff ###
+sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get update
+
+sudo apt-get install neovim
+
 pip install pillow
+pip
 
 
 ### install i3 ###
@@ -37,4 +42,11 @@ wget "https://github.com/FortAwesome/Font-Awesome/blob/master/fonts/FontAwesome.
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
+# Use nvim instead of vim
+sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
+sudo update-alternatives --config vi
+sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
+sudo update-alternatives --config vim
+sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
+sudo update-alternatives --config editor
 
