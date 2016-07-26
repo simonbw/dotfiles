@@ -1,9 +1,10 @@
-
 #### MY STUFF ####
  
 if [ -e "$HOME/env/etc/indeedrc" ]; then
     . "$HOME/env/etc/indeedrc"
 fi
+
+echo "RUNNING MYBASHRC"
 
 export PYTHONSTARTUP=$HOME/.pythonrc
 export EDITOR=vim

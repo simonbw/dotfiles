@@ -69,6 +69,7 @@ nmap <C-d> yyp
 imap <C-F> <esc>:Goyo<return>i
 nmap <C-F> :Goyo<return>
 
+" move lines up and down
 nmap <C-Up> :m -2<return>
 nmap <C-Down> :m +1<return>
 imap <C-Up> <esc>:m -2<return>i
@@ -76,7 +77,8 @@ imap <C-Down> <esc>:m +1<return>i
 vnoremap <C-Up> :m '<-2<CR>gv=gv
 vnoremap <C-Down> :m '>+1<CR>gv=gv
 
-nmap <C-tab> :bn<return>
+" move between tabs
+nmap <A-tab> :bn<return>
 
 nmap <C-s> :w<return>
 nmap <C-w> :q<return>
