@@ -6,11 +6,11 @@
 
 
 if [ "$BLOCK_BUTTON" == "4" ]; then
-    pactl set-sink-volume 1 +2%
+    volume_up
 elif [ "$BLOCK_BUTTON" == "5" ]; then
-    pactl set-sink-volume 1 -- -2%
+    volume_down
 elif [ "$BLOCK_BUTTON" == "3" ]; then
-    pactl set-sink-mute 1 toggle
+    volume_toggle_mute
 fi
 
 VOLUME=`amixer -D pulse get Master | awk '$0~/%/{print $5}' | tr -d '[]%'| head -n1`

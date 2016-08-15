@@ -2,9 +2,9 @@
 ### Environment Set Up ###
 bash -l $HOME/env/etc/indeed_profile
 set -x PATH $HOME/bin $HOME/env/bin $PATH
-set -g -x PYTHONSTARTUP=$HOME/.pythonrc
-set -g -x EDITOR=vim
-set -g -x TERM=xterm-256color
+set -g -x PYTHONSTARTUP $HOME/.pythonrc
+set -g -x EDITOR vim
+set -g -x TERM xterm-256color
 
 ### Prompt ###
 
@@ -20,3 +20,8 @@ end
 ### Other ###
 function fish_greeting
 end
+
+alias rmi "rm -i"
+
+
+

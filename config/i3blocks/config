@@ -16,11 +16,6 @@ signal=1
 command=/home/simonb/.config/i3blocks/load_section
 interval=1
 
-[disk]
-command=/home/simonb/.config/i3blocks/disk_section
-interval=10
-label=
-
 [date]
 command=date '+%b %d - %r'
 interval=1

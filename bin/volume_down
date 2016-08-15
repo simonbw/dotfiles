@@ -1,0 +1,5 @@
+#! /bin/bash
+
+#pactl set-sink-vule 1 -- -2%
+#amixer -q sset Master,0 2- unmute; 
+amixer -q -D pulse set Master 2%- unmute

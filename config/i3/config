@@ -22,7 +22,8 @@ bindsym $mod+Up focus up
 bindsym $mod+semicolon focus right
 bindsym $mod+Right focus right
 
-bindsym $mod+Tab focus right
+#bindsym $mod+Tab focus right
+bindsym $mod+Tab exec i3_cycle_windows
 bindsym $mod+Shift+Tab focus left
 
 # move focused window
@@ -174,11 +175,9 @@ bindsym $mod+Shift+z exec --no-startup-id simonlock
 bindsym $mod+Shift+s exec --no-startup-id notify-send i3testmessage 'this is a test message from i3'
 
 # Media Keys
-bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume 1 +2%; pkill -SIGRTMIN+1 i3blocks"
-bindsym Shift+XF86AudioRaiseVolume exec "pactl set-sink-volume 1 +10%; pkill -SIGRTMIN+1 i3blocks"
-bindsym XF86AudioLowerVolume exec "pactl set-sink-volume 1 -- -2%; pkill -SIGRTMIN+1 i3blocks"
-bindsym Shift+XF86AudioLowerVolume exec "pactl set-sink-volume 1 -- -10%; pkill -SIGRTMIN+1 i3blocks"
-bindsym XF86AudioMute exec "pactl set-sink-mute 1 toggle; pkill -SIGRTMIN+1 i3blocks"
+bindsym XF86AudioRaiseVolume exec "volume_up; pkill -SIGRTMIN+1 i3blocks"
+bindsym XF86AudioLowerVolume exec "volume_down; pkill -SIGRTMIN+1 i3blocks"
+bindsym XF86AudioMute exec "volume_toggle_mute; pkill -SIGTMIN+1 i3blocks"
 
 bindsym XF86AudioPause exec "playerctl play-pause; pkill -SIGRTMIN+2 i3blocks"
 bindsym XF86AudioNext exec "playerctl next; pkill -SIGRTMIN+2 i3blocks"
