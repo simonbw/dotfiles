@@ -167,7 +167,7 @@ exec_always feh --bg-fill /home/simonb/background.png
 # Keybound apps
 bindsym $mod+Shift+q exec i3-msg exit
 bindsym $mod+Return exec gnome-terminal
-bindsym $mod+Shift+Return exec g/usr/bin/google-chrome
+bindsym $mod+Shift+Return exec /usr/bin/google-chrome
 bindsym $mod+Ctrl+Return exec subl
 bindsym $mod+space exec --no-startup-id rofi -show run
 bindsym $mod+Shift+space exec --no-startup-id rofi -show window
@@ -184,13 +184,13 @@ bindsym XF86AudioNext exec "playerctl next; pkill -SIGRTMIN+2 i3blocks"
 bindsym XF86AudioPrev exec "playerctl previous; pkill -SIGRTMIN+2 i3blocks"
 
 # Window Colors         Border | Bg    | Text  | indicator 
-client.focused          #444444 #444444 #afaf5f #262626
+client.focused          #8a8a8a #8a8a8a #262626 #8a8a8a
 client.focused_inactive #262626 #262626 #afaf5f #262626
 client.unfocused        #262626 #262626 #8a8a8a #262626
 client.urgent           #2f343a #d75f00 #ffffff #262626
 
 # Borders and Gaps
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 3
 gaps inner 10
 gaps outer 0
 #smart_borders no_gaps
