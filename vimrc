@@ -11,10 +11,10 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 " ---- Vundle Bundles ----
 call vundle#begin()
-Plugin 'PotatoesMaster/i3-vim-syntax'
-Plugin 'dag/vim-fish'
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'PotatoesMaster/i3-vim-syntax'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'dag/vim-fish'
 Plugin 'edkolev/promptline.vim'
 Plugin 'gregsexton/MatchTag'
 Plugin 'junegunn/goyo.vim'
@@ -26,8 +26,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tomasr/molokai'
 Plugin 'vim-scripts/twilight'
-"Plugin 'morhetz/gruvbox'
 " unused
+"Plugin 'morhetz/gruvbox'
 "Plugin 'pangloss/vim-javascript'
 call vundle#end()
 
@@ -92,9 +92,9 @@ set laststatus=2
 let g:airline_powerline_fonts=1
 let g:bufferline_echo=0
 set noshowmode
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#left_sep=' '
+let g:airline#extensions#tabline#left_alt_sep='|'
 
 " ---- Other Stuff ----
 syntax on
@@ -111,9 +111,9 @@ set cursorline
 set scrolloff=5
 
 " ---- Promptline ----
-let g:promptline_theme = 'airline'
-let g:promptline_powerline_symbols = 1
-let g:promptline_preset = {
+let g:promptline_theme='airline'
+let g:promptline_powerline_symbols=1
+let g:promptline_preset={
     \'a' : [ promptline#slices#host({'only_if_ssh': 1}) ],
     \'b' : [ promptline#slices#cwd({'dir_limit': 3}) ],
     \'z' : [ promptline#slices#vcs_branch() ],
