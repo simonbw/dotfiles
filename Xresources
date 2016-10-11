@@ -1,0 +1,16 @@
+! ------------ !
+!     ROFI 
+! ------------ !
+! choose from: [ none, dash, solid ]
+rofi.separator-style: solid
+rofi.font: mono 14
+rofi.padding: 10
+rofi.line-margin: 10
+
+rofi.color-enabled:true
+!                  bg       fg       bgalt    hlbg     hlfg 
+rofi.color-normal:#262626, #8a8a8a, #262626, #afaf5f, #262626
+rofi.color-urgent:#262626, #8a8a8a, #262626, #8a8a8a, #262626
+rofi.color-active:#262626, #8a8a8a, #262626, #8a8a8a, #262626
+!                  bg      fg
+rofi.color-window:#262626,#262626
