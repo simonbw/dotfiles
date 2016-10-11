@@ -53,6 +53,7 @@ sudo apt-get install i3lock
 sudo apt-get install neovim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
+vim +PromptlineSnapshot ~/.prompt.sh +qall
 
 # Use nvim instead of vim
 sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
